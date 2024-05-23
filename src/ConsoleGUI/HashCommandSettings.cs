@@ -5,7 +5,7 @@ using Spectre.Console.Cli;
 namespace ConsoleGUI;
     internal sealed class HashCommandSettings: CommandSettings
     {
-        private List<string> _modes = new List<string>{"crc32", "sum32"};
+        private  readonly List<string> _modes = new List<string>{"crc32", "sum32"};
         
         [Description("Path to file.")]
         [CommandArgument(0, "<path>")]
